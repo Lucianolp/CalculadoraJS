@@ -185,5 +185,3 @@ function mostrarModerno() {
     botonLarge[i].classList.add("botonModernoLarge");
   }
 }
-
-function mostrarBati() {}
