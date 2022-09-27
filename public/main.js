@@ -9,6 +9,13 @@ var estilosPopup = document.getElementById("estilosPopup");
 var cuerpo = document.getElementById("cuerpo");
 var botonNumero = document.getElementsByClassName("botonNumero");
 var botonLarge = document.getElementsByClassName("large");
+
+//Service Worker
+let swLocation = "sw.js";
+if(navigator.serviceWorker){
+  navigator.serviceWorker.register(swLocation);
+}
+
 //código de teclas
 window.onload = function () {
   document.onkeydown = teclas;
